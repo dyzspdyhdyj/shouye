@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	list-style: none;
+	text-decoration: none;
+	font-family: "苹方 sans-serif";
+}
+i,p,span,a{
+	user-select:none;
+}
+header{
+	width: 100%;
+	/* background: rgba(0, 0, 0,0.5); */
+}
+.headerTitle{
+	width: 1200px;
+	height: 85px;
+	margin: 0 auto;
+	line-height: 85px;
+}
+.headerLeft{
+	float: left;
+}
+.headerLeft span{
+	/* color: #fff; */
+	padding-left: 5px;
+}
+.headerLeft i{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 38px;
+	color: #19bb9b;
+}
+.headerRight{
+	float: right;
+}
+.headerRight ul li{
+	float: left;
+}
+.headerRight ul li a:hover{
+	color: #fff;
+	background: #19bb9b;
+}
+.headerRight ul li:nth-child(1) a{
+	color: #fff;
+	background: #19bb9b;
+}
+.headerRight ul li a{
+	font-weight: bold;
+	/* font-weight: bold; */
+	padding:15px;
+	color: #19bb9b;
+	font-size: 14px;
+	transition: all 0.8s;
+}
+	.win{
+	  width: 100%;
+	  height: 500px;
+	  margin: 50px auto;
+	  position: relative;
+	  overflow: hidden;
+	}
+	.win > .imgbox{
+		width: 100%;
+		height: 100%;
+	}
+	.win > .imgbox >li{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 100%;
+		top: 0;
+		float: left;
+	}
+	.win > .imgbox >li:first-child{
+		left: 0;
+		/* background : red;  */
+	}
+	/* .win > .imgbox >li:nth-child(2){
+		background : yellow; 
+	}
+	.win > .imgbox >li:nth-child(3){
+		background : blue; 
+	}
+	.win > .imgbox >li:nth-child(4){
+		background : green; 
+	}
+	.win > .imgbox >li:nth-child(5){
+		background : pink; 
+	}
+ */
+.guanyu{
+	    margin: 0 auto;
+    width: 1202px;
+    height: 410px;
+
+}
+.aboutimg{
+	position: relative;
+	width: 619px;
+	height: 420px;
+	float: left;
+}
+img{
+	display: block;
+     	position: absolute;
+     	width: 100%;
+     	height: 100%;
+     	left: 0;
+     	top: 0;
+}
+.aboutText{
+	/* float: right; */
+	    width: 510px;
+    float: right;
+    padding: 37px 13px 0 0;
+}
+.aboutTit {
+    font-size: 44.73px;
+    text-transform: uppercase;
+}
+.aboutintro2 {
+    font-size: 14px;
+    font-family: Arial;
+    margin-bottom: 13px;
+    color: #717171;
+}
+.aboutintro {
+    color: #555;
+    font-size: 24px;
+}
+.aboutInfo {
+    color: #666;
+    font-size: 15px;
+    line-height: 34px;
+    margin: 13px 0 31px;
+}
+.joinMore {
+    display: block;
+    margin: 0 auto;
+    width: 132px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    }
+    .joinMore:hover{
+    	background: orange; 
+    }
+    footer{
+	width: 100%;
+	margin-top: 60px;
+	overflow: hidden;
+	padding-bottom: 30px;
+	background:  #19bb9b;
+}
+.footerLeft{
+	color: #fff;
+	text-align: left;
+	float: left;
+	margin-left: 100px;
+}
+.footerLeft ul p{
+	padding: 10px 0;
+	text-align: left;
+	font-size: 16px;
+}
+.footerLeft ul li{
+	text-align: left;
+	padding-top:5px;
+	font-size: 14px;
+}
+.footerR{
+	float: right;
+	width: 200px;
+	height: 116px;
+	line-height: 30px;
+    margin-right: 100px;
+    margin-top: 30px;
+	border: 1px solid #fff;
+}
+.footerR span{
+	color: #fff;
+	display: inline-block;
+    padding-top: 30px;
+}
+.kongxi{
+	width: 100%;
+	height: 50px;
+}
+</style>
+<body>
+	<header>
+		<div class="headerTitle">
+			<div class="headerLeft">
+				<!-- <span></span> -->
+				<i>Home</i>
+				<span>&nbsp;家居设计</span>
+			</div>
+			<div class="headerRight">
+				<ul>
+					<Li><a href="首页.html">首页</a></Li>
+					<Li><a href="关于我们.html">关于我们</a></Li>
+					 <!--<Li><a href="团队介绍.html">团队介绍</a></Li>-->
+					<Li><a href="案例展示.html">案例展示</a></Li>
+					<Li><a href="新闻资讯.html">新闻资讯</a></Li>
+					<Li><a href="家居产品.html">家居产品</a></Li>
+					<Li><a href="设计流程.html">设计流程</a></Li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	 <div class="win">
+      	<ul class="imgbox">
+      	<li><img src="images/1-1G019134232629.jpg" alt=""></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li><img src="images/1-1G019134232629.jpg" alt=""></li>
+      	</ul>
+      </div>
+     <div class="guanyu">
+		<div class="aboutimg"><img src="images/2017-10-19_142306.png" alt=""></div>
+		<div class="aboutText">
+            		<div class="aboutTit mtbold"></div>
+                	<div class="aboutintro2"></div>
+                	<div class="aboutintro">关于欧派</div>
+                	<div class="aboutInfo">欧派致力于改变每一个家庭，为每一个家庭定制独一无二的家，让更多家庭享受高品质生活。我们每一款产品，都为满足个人的生活需求而打造。					</div>
+                    <a href="" style="margin: 0 0;" class="joinMore">查看更多</a>
+                </div>
+	</div>
+	<div class="kongxi"></div>
+		<footer>
+		<div class="content">
+			<div class="footerLeft">
+				<ul>
+					<p>联系我们</p>
+					<li>地址：XXX省XXX市XXX县XXX路XXX号</li>
+					<li>Tel :  000-12345678x  &nbsp;  Fax：000-12345678x  &nbsp; 12345678x</li>
+					<li>网址: www.xxxx.com &nbsp;  QQ:  1234567xxxx</li>
+					<li>邮箱: xxxx@mail.com</li>
+				</ul>
+			</div>
+			<div class="footerR">
+				<span>客服电话：<br>
+				400-000-0000
+				</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

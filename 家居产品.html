@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* text-align: center; */
+	list-style: none;
+	text-decoration: none;
+	font-family: "苹方 sans-serif";
+}
+i,p,span,a{
+	user-select:none;
+}
+header{
+	width: 100%;
+	/* background: rgba(0, 0, 0,0.5); */
+}
+.headerTitle{
+	width: 1200px;
+	height: 85px;
+	margin: 0 auto;
+	line-height: 85px;
+}
+.headerLeft{
+	float: left;
+}
+.headerLeft span{
+	/* color: #fff; */
+	padding-left: 5px;
+}
+.headerLeft i{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 38px;
+	color: #19bb9b;
+}
+.headerRight{
+	float: right;
+}
+.headerRight ul li{
+	float: left;
+}
+.headerRight ul li a:hover{
+	color: #fff;
+	background: #19bb9b;
+}
+.headerRight ul li:nth-child(1) a{
+	color: #fff;
+	background: #19bb9b;
+}
+.headerRight ul li a{
+	font-weight: bold;
+	/* font-weight: bold; */
+	padding:15px;
+	color: #19bb9b;
+	font-size: 14px;
+	transition: all 0.8s;
+}
+     footer{
+	width: 100%;
+	margin-top: 60px;
+	overflow: hidden;
+	padding-bottom: 30px;
+	background:  #19bb9b;
+}
+.footerLeft{
+	color: #fff;
+	text-align: left;
+	float: left;
+	margin-left: 100px;
+}
+.footerLeft ul p{
+	padding: 10px 0;
+	text-align: left;
+	font-size: 16px;
+}
+.footerLeft ul li{
+	text-align: left;
+	padding-top:5px;
+	font-size: 14px;
+}
+.footerR{
+	float: right;
+	text-align: center;
+	width: 200px;
+	height: 116px;
+	line-height: 30px;
+    margin-right: 100px;
+    margin-top: 30px;
+	border: 1px solid #fff;
+}
+.footerR span{
+	color: #fff;
+	display: inline-block;
+    padding-top: 30px;
+}
+.kongxi{
+	width: 100%;
+	height: 50px;
+}
+.product {
+    height: auto;
+    /* overflow: hidden; */
+    padding-top: 91px;
+}
+.wd {
+    margin: 0 auto;
+    width: 1202px;
+}
+.productTit {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.productTit a {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+.productTit a b {
+    font-weight: normal;
+    color: #333;
+    float: left;
+    display: block;
+    font-size: 25px;
+    margin-top: 2px;
+}
+.productTit a span {
+    color: #cbcbcb;
+    float: left;
+    display: block;
+    font-size: 36px;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+.productSeries {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin: 23px 0 70px;
+}
+.productSeries li {
+    display: inline-block;
+    zoom: 1;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    width: 158px;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.productSeries li a {
+    display: block;
+    color: #777;
+    font-size: 14px;
+}
+.productSeriesBox {
+    height: auto;
+    overflow: hidden;
+    padding: 7px 0 107px;
+}
+.productSeriesImg {
+    float: left;
+    position: relative;
+}
+.productSeriesImg img {
+    width: 494px;
+    height: 351px;
+}
+img {
+    border: 0;
+    vertical-align: top;
+    /* max-width: 100%; */
+}
+.productSeriesImg div {
+    position: absolute;
+    left: 0;
+    bottom: -37px;
+    z-index: 5;
+    width: 100%;
+    height: 37px;
+    /* background: url(../images/productBg.jpg) no-repeat 0 0; */
+}
+.productSeriesText {
+    float: right;
+    width: 636px;
+}
+.productList {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 19px 0 142px;
+    background-color: #f7f7f7;
+}
+.productList li {
+    display: inline-block;
+   /*  zoom: 1; */
+    position: relative;
+    width: 320px;
+    background-color: #fff;
+    padding: 15px 15px 10px;
+    margin: 55px 11px 0;
+}
+.productList li a {
+    display: block;
+    font-size: 20px;
+    color: #333;
+}
+.proImg {
+    width: 320px;
+    height: 194px;
+    overflow: hidden;
+    position: relative;
+}
+.productList li a p {
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.productList li a i {
+    position: absolute;
+    left: 0;
+    bottotm: -26px;
+    z-index: 5;
+    width: 100%;
+    height: 26px;
+    /* background: url(../images/probg.jpg) no-repeat center top; */
+}
+.shop {
+    height: auto;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    padding-bottom: 184px;
+}
+.shop .wd {
+    position: relative;
+}
+
+.shop .wd {
+    position: relative;
+}
+.productSeriesText h3 {
+    color: #666;
+    font-size: 26px;
+    padding: 8px 0 22px;
+    border-bottom: 1px dashed #b7b7b7;
+}
+.wd {
+    margin: 0 auto;
+    width: 1202px;
+}
+.Info2 {
+    color: #666;
+    font-size: 13px;
+    line-height: 36px;
+    margin-top: 21px;
+}
+.win{
+	  width: 100%;
+	  height: 500px;
+	  margin: 50px auto;
+	  position: relative;
+	  overflow: hidden;
+	}
+	.win > .imgbox{
+		width: 100%;
+		height: 100%;
+	}
+	.win > .imgbox >li{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 100%;
+		top: 0;
+		float: left;
+	}
+	.win > .imgbox >li:first-child{
+		left: 0;
+		/* background : red;  */
+	}
+	img{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+<body>
+<header>
+		<div class="headerTitle">
+			<div class="headerLeft">
+				<!-- <span></span> -->
+				<i>Home</i>
+				<span>&nbsp;装饰设计</span>
+			</div>
+			<div class="headerRight">
+				<ul>
+					<Li><a href="首页.html">首页</a></Li>
+					<Li><a href="关于我们.html">关于我们</a></Li>
+					 <!--<Li><a href="团队介绍.html">团队介绍</a></Li>-->
+					<Li><a href="案例展示.html">案例展示</a></Li>
+					<Li><a href="新闻资讯.html">新闻资讯</a></Li>
+					<Li><a href="家居产品.html">家居产品</a></Li>
+					<Li><a href="设计流程.html">设计流程</a></Li>
+				</ul>
+			</div>
+		</div>
+		</header>
+		 <!-- <div class="kongxi"></div> -->
+           <div class="win">
+      	<ul class="imgbox">
+      	<li><img src="images/1-1G019134232629.jpg" alt=""></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li><img src="images/1-1G019134232629.jpg" alt=""></li>
+      	</ul>
+      </div>
+	<div class="product">
+            <div class="wd fixed">
+            	<div class="productTit"><a href="javascript:;"><b>产品展示</b><span class="mtbold">Products</span></a></div>
+                <ul class="productSeries">
+                	                	<li class="t97 on"><a href="">尊贵系列</a></li>
+                	                	<li class="t108"><a href="">经典系列</a></li>
+                	                	<li class="t109"><a href="">时尚系列</a></li>
+                	                	<li class="t155"><a href="">墙布系列</a></li>
+                	                	<li class="t156"><a href="">配套软硬包</a></li>
+                	                	<li class="t157"><a href="">配套装饰画</a></li>
+                	
+                </ul>
+         
+               
+                <div class="productSeriesBox">
+                	<div class="productSeriesImg"><a href="javascript:;"><img src="http://www.oppein.com/upfile/2016/07/20160719162502_331.jpg" alt="" title=""></a><div>&nbsp;</div></div>
+                    <div class="productSeriesText">
+                    	<h3>尊贵系列</h3>
+                        <div class="Info2"><p>国外进口高端壁纸，源自美国、德国、荷兰、意大利、比利时的精湛设计与专业制造。</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="productList fixed">
+            	
+            	                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183944.png" alt="" title=""></div><p>莱茵阳光 德国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href="http://www.oppein.com/cn/womendeyewu/zunguixilie72/288.html"><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_184006.png" alt="" title=""></div><p>梦之比利时III 比利时进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183127.png" alt="" title=""></div><p>梦之比利时II 比利时进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183348.png" alt="" title=""></div><p>梦之比利时I 比利时进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183425.png" alt="" title=""></div><p>风尚-诺丁山 美国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183512.png" alt="" title=""></div><p>哈迪森 美国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183601.png" alt="" title=""></div><p>天籁 美国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183634.png" alt="" title=""></div><p>夏洛蒂 美国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183733.png" alt="" title=""></div><p>苏黎世Ⅲ 德国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183819.png" alt="" title=""></div><p>苏黎世Ⅱ 德国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183842.png" alt="" title=""></div><p>花漾年华 德国进口壁纸</p><i>&nbsp;</i></a></li>
+                                <li><a target="_blank" href=""><div class="proImg"><span class="prospan">&nbsp;</span><img src="images/2017-10-19_183917.png" alt="" title=""></div><p>仲夏恋曲 德国进口壁纸</p><i>&nbsp;</i></a></li>
+                            </ul>
+        </div>
+        <footer>
+		<div class="content">
+			<div class="footerLeft">
+				<ul>
+					<p>联系我们</p>
+					<li>地址：XXX省XXX市XXX县XXX路XXX号</li>
+					<li>Tel :  000-12345678x  &nbsp;  Fax：000-12345678x  &nbsp; 12345678x</li>
+					<li>网址: www.xxxx.com &nbsp;  QQ:  1234567xxxx</li>
+					<li>邮箱: xxxx@mail.com</li>
+				</ul>
+			</div>
+			<div class="footerR">
+				<span>客服电话：<br>
+				400-000-0000
+				</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
